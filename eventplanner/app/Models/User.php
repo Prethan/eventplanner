@@ -32,6 +32,19 @@ use Spatie\MediaLibrary\InteractsWithMedia;
         'email',
         'password',
         'role',
+
+        //profile
+        'first_name',
+        'second_name',
+        'phone',
+        'address',
+        'country',
+        'city',
+        'state_province',
+        'zip_code',
+
+        //payment
+        'card_number',
     ];
 
     /**
