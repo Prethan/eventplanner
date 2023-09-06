@@ -24,7 +24,7 @@
 
             <div class="hidden sm:flex sm:items-center sm:ml-6">
                 
-               @guest
+               <!-- @guest -->
                  <x-nav-link href="{{ route('login') }}" :active="request()->routeIs('login')">
                         {{ __('Login') }}
                 </x-nav-link>
@@ -32,7 +32,7 @@
                 <x-nav-link href="{{ route('register') }}" :active="request()->routeIs('register')">
                         {{ __('Register') }}
                 </x-nav-link>
-                @endguest
+                <!-- @endguest -->
 
                 @auth
                 <!-- Teams Dropdown -->

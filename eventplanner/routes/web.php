@@ -20,6 +20,12 @@ Route::middleware([
 ])->group(function () {
 
     Route::get('/dashboard', function () {
+
+        // dd(\App\Enums\UserRole::User);
+
+        dd(auth()->user());
+
+
         return view('dashboard');
     })->name('dashboard');
 
@@ -31,7 +37,15 @@ Route::get('event/{id}',function($id){
         'event' => $id
     ]);
         
-});
+})
+ //->where('id, '[0-9]+')
+->name('event.show');
+
+Route::get('reserve/{id}',function($id){
+    return view('event.reservation', [
+        'reserve' => $id
+    ]);
+})->name('event.reservation');
 
 Route::get('/', function () {
     return view('home');

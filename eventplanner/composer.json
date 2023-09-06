@@ -11,7 +11,10 @@
         "laravel/jetstream": "^3.0",
         "laravel/sanctum": "^3.0",
         "laravel/tinker": "^2.7",
-        "livewire/livewire": "^2.11"
+        "livewire/livewire": "^2.11",
+        "maennchen/zipstream-php": "^2.0",
+        "psr/http-message": "^1.1 || ^2.0",
+        "spatie/laravel-medialibrary": "^10.0.0"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",
@@ -59,7 +62,8 @@
         "preferred-install": "dist",
         "sort-packages": true,
         "allow-plugins": {
-            "pestphp/pest-plugin": true
+            "pestphp/pest-plugin": true,
+            "phpstan/extension-installer": true
         }
     },
     "minimum-stability": "stable",

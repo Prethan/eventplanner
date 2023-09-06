@@ -15,6 +15,15 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('email')->unique();
+            //method 1- shp
+            $table->enum('role',['admin','user'])->default('user');
+
+            //method 3
+            // $table
+            //    ->tinyInteger('role')
+            //    ->default(\App\Enums\UserRole::User->value);
+
+
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->rememberToken();
@@ -32,3 +41,12 @@ return new class extends Migration
         Schema::dropIfExists('users');
     }
 };
+
+
+
+
+//method 1- shp
+            // $table->enum('role',['admin','user'])->default('user');
+
+            //method 2 -no f way
+            //$table->string('role')->default('user');
