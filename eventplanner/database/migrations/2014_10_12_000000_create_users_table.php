@@ -24,7 +24,7 @@ return new class extends Migration
             //    ->default(\App\Enums\UserRole::User->value);
 
             //profile
-            $table->string('first_name')->nullabale();
+            $table->string('first_name')->nullable();
             $table->string('last_name')->nullable();
             $table->string('phone',20)->nullable();
             $table->text('address')->nullable();
