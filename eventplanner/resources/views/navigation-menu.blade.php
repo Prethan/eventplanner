@@ -126,7 +126,7 @@
                             </x-dropdown-link>
 
                             <x-dropdown-link href="{{ route('admin.category.index') }}">
-                                {{ __('Catergories') }}
+                                {{ __('Categories') }}
                             </x-dropdown-link>
 
                             <x-dropdown-link href="{{ route('admin.reservation.index') }}">
@@ -134,7 +134,7 @@
                             </x-dropdown-link>
 
                             <x-dropdown-link href="{{ route('admin.users.index') }}">
-                                {{ __('Events') }}
+                                {{ __('Users') }}
                             </x-dropdown-link>
 
                         @endcan
