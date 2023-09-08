@@ -107,6 +107,15 @@
                         </x-slot>
 
                         <x-slot name="content">
+
+
+                        @can('accessAdministration')
+                        
+                        
+
+
+
+
                              <!-- Administration -->
                              <div class="block px-4 py-2 text-xs text-gray-400">
                                 {{ __('Administration') }}
@@ -127,6 +136,8 @@
                             <x-dropdown-link href="{{ route('admin.users.index') }}">
                                 {{ __('Events') }}
                             </x-dropdown-link>
+
+                        @endcan
 
                             <!-- Account Management -->
                             <div class="block px-4 py-2 text-xs text-gray-400">

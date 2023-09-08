@@ -1,9 +1,15 @@
 <?php
 
-namespace App\Enums;
+// namespace App\Enums;
 
-enum UserRole :int
+// enum UserRole :int
+// {
+//     case User = 1;
+//     case Admin = 2;
+// }
+
+class UserRoles
 {
-    case User = 1;
-    case Admin = 2;
+    const ADMIN = 'admin';
+    const USER = 'user';
 }
