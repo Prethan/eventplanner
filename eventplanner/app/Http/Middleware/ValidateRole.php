@@ -48,7 +48,7 @@ class ValidateRole
             return $next($request);
         }else {
             //if not,throw an exception 403
-            throw new \Exception('Sorry you cannot access this page',403);
+            throw new \Exception('Sorry you cannot access this',403);
         }
 
     }

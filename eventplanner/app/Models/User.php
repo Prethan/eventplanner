@@ -35,7 +35,7 @@ use Spatie\MediaLibrary\InteractsWithMedia;
 
         //profile
         'first_name',
-        'second_name',
+        'last_name',
         'phone',
         'address',
         'country',
